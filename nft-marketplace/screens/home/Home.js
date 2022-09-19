@@ -15,7 +15,8 @@ const Home = () => {
             data={NFTData}
             showsVerticalScrollIndicator={false}
             ListHeaderComponent={<HomeHeader />}
-            renderItem={({ item }) => <Text>{item.name}</Text>} />
+            renderItem={({ item }) => <NFTCard data={item} />}
+          />
         </View>
         <View style={{ position: 'absolute', top: 0, bottom: 0, right: 0, left: 0, zIndex: -1 }}>
           <View style={{ height: 300, backgroundColor: COLORS.primary }} />

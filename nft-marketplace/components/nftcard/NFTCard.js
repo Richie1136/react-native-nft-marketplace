@@ -4,7 +4,7 @@ import { CircleButton } from '../circlebutton/CircleButton'
 
 import { COLORS, SIZES, SHADOWS, assets } from '../../screens/constants'
 
-import { SubInfo, People, NFTTitle, EthPrice, ImageCmp, EndDate } from '../subinfo/SubInfo'
+import { SubInfo, NFTTitle, EthPrice } from '../subinfo/SubInfo'
 
 
 const NFTCard = ({ data }) => {

@@ -2,10 +2,13 @@ import { View, Text, Image } from 'react-native'
 import { SIZES, FONTS, SHADOWS, COLORS, assets } from '../../screens/constants'
 
 
-export const NFTTitle = () => {
-  <View>
-    <Text>NFT Title</Text>
-  </View>
+export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
+  return (
+    <View>
+      <Text style={{ fontFamily: FONTS.semiBold, fontSize: titleSize, color: COLORS.primary }}>{title}</Text>
+      <Text style={{ fontFamily: FONTS.regular, fontSize: subTitleSize, color: COLORS.primary }}>{subTitle}</Text>
+    </View>
+  )
 }
 
 export const EthPrice = () => {
@@ -35,7 +38,9 @@ export const People = () => {
 export const EndDate = () => {
   return (
     <View style={{ paddingHorizontal: SIZES.font, paddingVertical: SIZES.base, backgroundColor: COLORS.white, justifyContent: 'center', alignItems: 'center', ...SHADOWS.light, elevation: 1, maxWidth: '50%' }}>
-      <Text>End Date</Text>
+      <Text style={{ fontFamily: FONTS.regular, fontSize: SIZES.small, color: COLORS.primary }}>Ending in</Text>
+      <Text style={{ fontFamily: FONTS.semiBold, fontSize: SIZES.medium, color: COLORS.primary }}>12h 30m</Text>
+
     </View>
   )
 }

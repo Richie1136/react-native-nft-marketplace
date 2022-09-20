@@ -1,10 +1,10 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
-import { COLORS } from '../../screens/constants'
+import { COLORS, SIZES, FONTS, SHADOWS } from '../../screens/constants'
 
 
-export const CircleButton = () => {
+export const CircleButton = ({ imgUrl, handlePress, right, top }) => {
   return (
-    <TouchableOpacity style={{ width: 40, height: 40, backgroundColor: COLORS.white }}>
+    <TouchableOpacity style={{ width: 40, height: 40, top, right, backgroundColor: COLORS.white, position: 'absolute', borderRadius: SIZES.extraLarge, alignItems: 'center', justifyContent: 'center', ...SHADOWS.light }}>
 
     </TouchableOpacity>
   )

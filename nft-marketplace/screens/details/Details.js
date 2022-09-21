@@ -1,4 +1,6 @@
-import { Text } from "react-native"
+import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-native"
+
+import { COLORS, SIZES, SHADOWS, FONTS, assets } from "../constants"
 
 const Details = () => {
   return (

@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image, TextInput } from 'react-native'
 
 const HomeHeader = () => {
   return (

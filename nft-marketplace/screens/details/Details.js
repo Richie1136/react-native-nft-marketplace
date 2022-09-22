@@ -28,6 +28,10 @@ const Details = ({ route, navigation }) => {
       <FlatList ListHeaderComponent={() => (
         <>
           <DetailsHeader data={data} navigation={navigation} />
+          <SubInfo />
+          <View style={{ padding: SIZES.font }}>
+            <DetailsDescription data={data} />
+          </View>
         </>
       )}
         keyExtractor={(item) => item.id}

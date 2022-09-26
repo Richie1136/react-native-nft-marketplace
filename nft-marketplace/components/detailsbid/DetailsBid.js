@@ -1,4 +1,7 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
+import { EthPrice } from '../subinfo/SubInfo'
+import { SIZES, FONTS, COLORS } from '../../screens/constants'
+
 
 const DetailsBid = () => {
   return (

@@ -12,9 +12,6 @@ const NFTCard = ({ data }) => {
 
   const navigation = useNavigation()
 
-
-
-
   return (
     <View style={{
       backgroundColor: COLORS.white,

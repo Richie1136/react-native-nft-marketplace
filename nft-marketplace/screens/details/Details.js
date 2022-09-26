@@ -9,7 +9,6 @@ const DetailsHeader = ({ data, navigation }) => (
     <Image resizeMode="cover" source={data.image} style={{ width: '100%', height: '100%' }} />
     <CircleButton imgUrl={assets.left} handlePress={() => navigation.goBack()} left={15} top={StatusBar.currentHeight + 10} />
     <CircleButton imgUrl={assets.heart} right={15} top={StatusBar.currentHeight + 10} />
-
   </View>
 )
 
